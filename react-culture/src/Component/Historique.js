@@ -22,4 +22,4 @@ class Historique extends Component {
     }
 }
  
-export default ;
+export default Historique;
