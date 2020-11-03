@@ -1,5 +1,7 @@
 import axios from "axios"
 
+export let historique = []
+
 
 // const users = [
 //     {login : 'Elotora', password : '1234567'}
