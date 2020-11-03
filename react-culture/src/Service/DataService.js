@@ -1,4 +1,5 @@
 import axios from "axios"
+export const libraire = []
 
 
 // const users = [
@@ -11,4 +12,15 @@ export const login = (login, password) => {
 }
 export const changeIsLogged = (log) => {
     isLogged = log
+}
+
+let compteurLibraire = 1
+
+export const ajouterLibraire = (libraire) => {
+    const tmpLibraire = {
+        ...libraire,
+        id : compteurLibraire
+    }
+    libraires.push(tmpLibraire)
+    compteurLibraire++
 }
