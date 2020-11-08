@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {changeIslogged, login } from './../Service/DataService';
+import { changeIsLogged, login } from './../Service/DataService';
 import {notification} from "antd"
 
 class Login extends Component {
@@ -23,7 +23,7 @@ class Login extends Component {
 
     ClickConnect = () => {
         if(login(this.state.user.login, this.state.user.password)){
-            changeIslogged(true)
+            changeIsLogged(true)
             if(this.props.match.params.url != undefined) {
                 this.props.history.push("/"+this.props.match.params.url)
             }

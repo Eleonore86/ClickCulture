@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { libraires, getLibraires, search } from '../services/DataService';
-import Libraires from './libraires';
+import { libraires, getLibraires, search } from '../Service/DataService';
+import Libraires from './Libraires';
 // import Search from './Search';
 
 import {Spin, Input} from "antd"
@@ -18,7 +18,7 @@ class Home extends Component {
         getLibraires().then((result) => {
             this.setState({
                 loading : false,
-                Libraires : result.data.libraires
+                libraires : result.data.libraires
             })
         })
     }

@@ -1,7 +1,24 @@
-import axios from "axios"
+// import axios from "axios"
 export const libraires = []
 
 export let favoris = []
+
+export const getLibraires = () => {
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            resolve(libraires)
+        }, 3000)
+    })
+}
+
+export const search = (filter) => {
+    return new Promise((resolve,reject) => {
+        const tmpLibraires = libraires.filter(l => l.nom.includes(filter) || l.description.includes(filter))
+        setTimeout(() => {
+            resolve(tmpLibraires)
+        }, 3000)
+    })
+}
 
 
 const users = [
