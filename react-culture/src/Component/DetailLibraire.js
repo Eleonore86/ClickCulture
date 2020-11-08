@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 import React, { Component } from 'react';
 import {getLibraireById} from '../Service/DataService';
 import {Carousel} from 'antd';
@@ -58,4 +56,3 @@ class DetailLibraire extends Component {
 }
  
 export default DetailLibraire;
->>>>>>> fb9971718b6ca58f41023d0a39d725944237e3f5
