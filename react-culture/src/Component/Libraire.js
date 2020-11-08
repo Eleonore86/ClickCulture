@@ -21,7 +21,8 @@ class Libraire extends Component {
                  <div className="col-7">
                      <div className="row m-1">
                          <div className="col">
-                             {libraire.titre}
+                             {libraire.nom}
+                             {libraire.}
                          </div>
                      </div>
                      <div className="row m-1">
