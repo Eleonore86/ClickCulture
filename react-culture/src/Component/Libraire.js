@@ -22,7 +22,21 @@ class Libraire extends Component {
                      <div className="row m-1">
                          <div className="col">
                              {libraire.nom}
-                             {libraire.}
+                         </div>
+                     </div>
+                     <div className="row m-1">
+                         <div className="col">
+                             {libraire.rue}
+                         </div>
+                     </div>
+                     <div className="row m-1">
+                         <div className="col">
+                             {libraire.codePostal}
+                         </div>
+                     </div>
+                     <div className="row m-1">
+                         <div className="col">
+                             {libraire.ville}
                          </div>
                      </div>
                      <div className="row m-1">
