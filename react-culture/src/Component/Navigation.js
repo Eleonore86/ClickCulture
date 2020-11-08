@@ -4,7 +4,7 @@ import Home from "./Home"
 import FormLibraire from "./FormLibraire"
 import Favoris from "./Favoris"
 import DetailLibraire from "./DetailLibraire"
-// import Menu from './Menu';
+import Menu from './Menu';
 import Login from './Login';
 // import { ThemeContext } from '../Tools/ThemeContext';
 
@@ -27,6 +27,7 @@ class Navigation extends Component {
         return ( 
             <BrowserRouter>
                 <div className="container-fluid">
+                    <Menu></Menu>
                     <Switch>
                         <Route path="/" exact component={Home}></Route>
                         <Route path="/addLibraire" component={FormLibraire}></Route>

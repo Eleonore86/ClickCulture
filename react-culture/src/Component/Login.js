@@ -21,7 +21,7 @@ class Login extends Component {
         })
     }
 
-    ClickConnect = () => {
+    clickConnect = () => {
         if(login(this.state.user.login, this.state.user.password)){
             changeIsLogged(true)
             if(this.props.match.params.url != undefined) {

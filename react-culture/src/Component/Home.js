@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { libraires, getLibraires, search } from '../Service/DataService';
+import {libraires, getLibraires, search } from '../Service/DataService';
 import Libraires from './Libraires';
 // import Search from './Search';
 
@@ -19,6 +19,10 @@ class Home extends Component {
             this.setState({
                 loading : false,
                 libraires : result.data.libraires
+            })
+        }).catch(err=> {
+            this.setState ({
+                loading : false
             })
         })
     }

@@ -17,7 +17,7 @@ class Menu extends Component {
                         <Link to='/'>Accueil</Link>
                     </li>
                     <li className="nav-item m-2">
-                        <Link to='/addAnnonce'>Ajouter une librairie</Link>
+                        <Link to='/addLibraire'>Ajouter une librairie</Link>
                     </li>
                     <li className="nav-item m-2">
                         <Link to='/favoris'>Recherches précédantes</Link>
