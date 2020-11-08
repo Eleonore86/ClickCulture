@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from "./Home"
 import FormLibraire from "./FormLibraire"
-import Historique from "./Historique"
+import Favoris from "./Favoris"
 import DetailLibraire from "./DetailLibraire"
 // import Menu from './Menu';
 import Login from './Login';
@@ -30,7 +30,7 @@ class Navigation extends Component {
                     <Switch>
                         <Route path="/" exact component={Home}></Route>
                         <Route path="/addLibraire" component={FormLibraire}></Route>
-                        <Route path="/Historique" component={Historique}></Route>
+                        <Route path="/Favoris" component={Favoris}></Route>
                         <Route path="detail/:id" component={DetailAnnonce}></Route>
                         <Route path="/login" exact component={Login}></Route>
                         <Route path="/login/:url" component={Login}></Route>

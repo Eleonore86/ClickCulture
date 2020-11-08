@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import {historique, isLogged } from '../service/DataService';
+import {favoris, isLogged } from '../service/DataService';
 import Libraires from './Libraires';
 
 
-class Historique extends Component {
+class Favoris extends Component {
     constructor(props) {
         super(props);
         if(!isLogged) {
-            this.props.history.push("login/historique")
+            this.props.history.push("login/favoris")
         }
         this.state = {
-            libraires : historique
+            libraires : favoris
         }
     }
     render() { 
@@ -22,4 +22,4 @@ class Historique extends Component {
     }
 }
  
-export default Historique;
+export default Favoris;
