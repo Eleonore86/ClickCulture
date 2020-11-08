@@ -26,3 +26,7 @@ export const ajouterLibraire = (libraire) => {
     libraires.push(tmpLibraire)
     compteurLibraire++
 }
+
+export const getLibraireById = (id) => {
+    return libraires.find(l => l.id ==id)
+}
