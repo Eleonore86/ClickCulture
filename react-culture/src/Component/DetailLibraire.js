@@ -33,7 +33,7 @@ class DetailLibraire extends Component {
                         <Carousel autoplay>
                             {this.state.libraire.images.map(
                                 (images, index) =>
-                                (<div key={index}><img style={contentStyle} src={image} /></div>)
+                                (<div key={index}><img src={images} /></div>)
                             )}
                         </Carousel>
                         <div className="row m-1">

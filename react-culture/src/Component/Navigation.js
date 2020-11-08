@@ -31,7 +31,7 @@ class Navigation extends Component {
                         <Route path="/" exact component={Home}></Route>
                         <Route path="/addLibraire" component={FormLibraire}></Route>
                         <Route path="/Favoris" component={Favoris}></Route>
-                        <Route path="detail/:id" component={DetailAnnonce}></Route>
+                        <Route path="detail/:id" component={DetailLibraire}></Route>
                         <Route path="/login" exact component={Login}></Route>
                         <Route path="/login/:url" component={Login}></Route>
                     </Switch>

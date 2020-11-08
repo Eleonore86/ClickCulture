@@ -1,7 +1,7 @@
 import axios from "axios"
-export const libraire = []
+export const libraires = []
 
-export let historique = []
+export let favoris = []
 
 
 // const users = [

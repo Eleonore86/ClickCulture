@@ -24,7 +24,7 @@ class FormLibraire extends Component {
 
     changeField = (e) => {
         let tmptLibraire = {...this.state.libraire}
-        tmptLibraire[e.target.getAttribute('nom')] = e.target.value
+        tmpLibraire[e.target.getAttribute('nom')] = e.target.value
         this.setState({
             libraire : {...tmpLibraire}
         })

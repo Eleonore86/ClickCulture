@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { changeIsLogged, login } from './../Service/DataService';
+import {changeIslogged, login } from './../Service/DataService';
 import {notification} from "antd"
 
 class Login extends Component {

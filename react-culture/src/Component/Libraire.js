@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Libraire extends Component {
 
@@ -46,7 +46,7 @@ class Libraire extends Component {
                      </div>
                  </div>
                  <div className="col-2">
-                     <Link className="btn btn-primary" to={'/detail/' + lbraire.id}>Detail</Link>
+                     <Link className="btn btn-primary" to={'/detail/' + libraire.id}>Detail</Link>
                  </div>
              </div>
          );
