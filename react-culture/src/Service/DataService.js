@@ -4,9 +4,9 @@ export const libraires = []
 export let favoris = []
 
 
-// const users = [
-//     {login : 'Elotora', password : '1234567'}
-// ]
+const users = [
+    {login : 'Elotora', password : '1234567'}
+]
 export let isLogged = false
 export const login = (login, password) => {
     const u = users.find(l => l.login == login && l.password == password)
