@@ -17,7 +17,7 @@ class FormLibraire extends Component {
                 codePostal : '',
                 ville : '',
                 tel : '',
-                image : []
+                images : []
             }
          }
     }
@@ -32,7 +32,7 @@ class FormLibraire extends Component {
 
     changeImage = (e, index) => {
         let tmpLibraire = {...this.state.libraire}
-        tmpLibraire.image[index] = e.target.value
+        tmpLibraire.images[index] = e.target.value
         this.setState({
             libraire : tmpLibraire
         })

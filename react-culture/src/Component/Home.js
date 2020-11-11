@@ -10,7 +10,7 @@ class Home extends Component {
         super(props);
         this.state = { 
             loading : true,
-            libraires : []
+            libraires1 : []
          }
     }
 
@@ -18,7 +18,8 @@ class Home extends Component {
         getLibraires().then((result) => {
             this.setState({
                 loading : false,
-                libraires : result.data.libraires
+                libraires1 : result
+                // .data.libraires
             })
         }).catch(err=> {
             this.setState ({
@@ -38,7 +39,8 @@ class Home extends Component {
         })
         search(text).then((result) => {
             this.setState({
-                libraires : result.data.libraires,
+                libraires1 : result,
+                // .data.libraires,
                 loading : false
             })
         }).catch(err=> {
@@ -53,7 +55,7 @@ class Home extends Component {
             <div className="container">
                 {/* <Search search={this.search}></Search> */}
                 <Search onChange={(e) => {this.search(e.target.value)}} placeholder="Votre recherche" enterButton="Search" size="large" loading={this.state.loading} />
-                {this.state.loading ? <div style={{textAlign: 'center'}}><Spin /></div> : <Libraires libraires={this.state.libraires}></Libraires>}
+                {this.state.loading ? <div style={{textAlign: 'center'}}><Spin /></div> : <Libraires libraires={this.state.libraires1}></Libraires>}
                 
             </div>
          );
