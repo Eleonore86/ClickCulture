@@ -18,6 +18,7 @@ export const ajouterLibraire = (libraire) => {
     }
     libraires.push(tmpLibraire)
     compteurLibraire++
+    console.log(libraires)
 }
 
 export const search = (filter) => {

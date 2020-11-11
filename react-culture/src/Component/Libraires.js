@@ -13,7 +13,7 @@ class Libraires extends Component {
         return ( 
             <div className="Container">
                 {this.props.libraires.map(libraire=>(
-                    <Libraire key={libraire.id} libraires={libraire}></Libraire>
+                    <Libraire key={libraire.id} libraire={libraire}></Libraire>
                     ))}
             </div>
          );
